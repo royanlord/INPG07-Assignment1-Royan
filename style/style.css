@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Rakkas; src: url('font/Rakkas-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto-Slab; src: url('font/RobotoSlab-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: silver;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar */
+.container-fluid .title-porto {
+    font-family: Roboto-Slab !important;
+    font-weight: bold !important;
+}
+
+.navbar-nav .nav-item {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+/* nav {
+    position: relative;
+    overflow: hidden;
+} */
+
+/* Profile */
+.profile {
+    background-color: white;
+    /* display: flex; */
+    flex-direction: row;
+    flex-flow: wrap;
+
+    /* justify-content: center; */
+    /* margin: 20px 40px 0pc 40px; */
+}
+
+.item {
+    box-sizing: border-box;
+}
+
+/* .item-name h2 {
+    font-family: Rakkas !important;
+} */
+
+/*
+.item-1 {
+    margin: 30px 40px 0 50px;
+}
+
+.item-2 {
+    margin: 30px 120px 0 0;
+} */
+
+.item .border-start {
+    /* border-left: 1px solid !important; */
+    border-color: rgba(255, 0, 255, 0.3) !important;
+    /* --bs-border-opacity: .5;
+    border-color: rgba(var(magenta), var(--bs-border-opacity)) !important; */
+}
+
+/* Media screen */
+@media (max-width:1199px) {
+    .item .border-start {
+        border-left: hidden !important;
+        border-top: 1px solid rgba(255, 0, 255, 0.3) !important;
+    }
+}
+
+@media (max-width:1070px) {
+    /* .item-name {
+        justify-content: center;
+        width: 85%;
+    } */
+    .item-detail {
+        width: 95%;
+    }
+    .item .border-start {
+        border-left: hidden !important;
+        border-top: 1px solid rgba(255, 0, 255, 0.3) !important;
+    }
+}
+
+@media (max-width:730px) {
+    /* .profile {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    } */
+    .item-detail {
+        /* width: 80%; */
+        box-sizing: border-box;
+    }
+    /* .item-detail table {
+        overflow-y: scroll;
+    } */
+    .item .border-start {
+        border-left: hidden !important;
+        border-top: 1px solid rgba(255, 0, 255, 0.3) !important;
+    }
+
+    @media (max-width:576px) {
+        .profile {
+            width: 80%;
+        }
+        .item-detail table {
+            font-size: 3vw;
+            /* overflow: initial; */
+        }
+
+        table .table .ms-3 {
+            margin-left: 0 !important;
+        }
+
+        .item .item-detail .ms-3 {
+            margin-left: -5px !important;
+        }
+        .item-detail .p-2 {
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+        }
+    }
+}
