@@ -12,22 +12,22 @@ buttonEdit.addEventListener('click', function () {
     }
 })
 
-// var textName = document.getElementById('text-name')
-// var textRole = document.getElementById('text-role')
-// var textAvailability = document.getElementById('text-availability')
-// var textAge = document.getElementById('text-age')
-// var textLocation = document.getElementById('text-location')
-// var textExperience = document.getElementById('text-experience')
-// var textEmail = document.getElementById('text-email')
+var textName = document.getElementById('text-name')
+var textRole = document.getElementById('text-role')
+var textAvailability = document.getElementById('text-availability')
+var textAge = document.getElementById('text-age')
+var textLocation = document.getElementById('text-location')
+var textExperience = document.getElementById('text-experience')
+var textEmail = document.getElementById('text-email')
 
 // input field read data from text field
-// document.getElementById('input-name').value = textName.innerText
-// document.getElementById('input-role').value = textRole.innerText
-// document.getElementById('input-availability').value = textAvailability.innerText
-// document.getElementById('input-age').value = textAge.innerText
-// document.getElementById('input-location').value = textLocation.innerText
-// document.getElementById('input-experience').value = textExperience.innerText
-// document.getElementById('input-email').value = textEmail.innerText
+document.getElementById('input-name').value = textName.innerText
+document.getElementById('input-role').value = textRole.innerText
+document.getElementById('input-availability').value = textAvailability.innerText
+document.getElementById('input-age').value = textAge.innerText
+document.getElementById('input-location').value = textLocation.innerText
+document.getElementById('input-experience').value = textExperience.innerText
+document.getElementById('input-email').value = textEmail.innerText
 
 // declare variable from text field
 let formData = {
